@@ -1,0 +1,47 @@
+#
+# AIQA configuration file
+#
+#
+
+aiqa:
+    apiUrl: 'https://app.aiqa.tech/api/'
+    cliTimeout: 100.0
+project:
+    id: 49
+    name: 'RWA'
+    rootFolder: './../'
+git:
+    mainBranch: 'develop'
+    binaryPath: '/usr/bin/git'
+user:
+    systemFamily: 'unix'
+    email: 'ci@aiqa.tech'
+    apiToken: '6bc6b09e-bed6-46cb-b9ac-9261fe4f18b5'
+testTool:
+    type: 'parallel'
+    reportPath: 'cypress/__ci_parallel.log'
+    regExp: '/^yarn cypress run -c baseUrl=http:\/\/localhost:3000 --spec (.*\.spec.js)$/'
+testCases:
+    scenariosPath: 'cypress/__ci_scenarios_list.txt'
+    include:
+        -
+            directory: 'cypress/integration/'
+            fileMask: '*.js'
+    exclude:
+srcFiles:
+    include:
+        -
+            directory: 'src/'
+            fileMask: '*.ts,*.tsx'
+    exclude:
+        -
+            directory: 'node_modules/'
+configuration:
+    exportFilename: 'someFile.yml'
+    mlService: 'local'
+pdepend:
+    binaryPath: './backend-php/vendor/pdepend/pdepend/src/bin/pdepend'
+encryption: false
+map:
+    namespace: 'AppBundle\'
+    path: 'src/AppBundle'
