@@ -1,0 +1,2 @@
+integration/menu.spec.js
+integration/dues.spec.js
