@@ -9,23 +9,23 @@ aiqa:
 project:
     id: 49
     name: 'RWA'
-    rootFolder: './../'
+    rootFolder: './../../'
 git:
-    mainBranch: 'develop'
+    mainBranch: 'master'
     binaryPath: '/usr/bin/git'
 user:
     systemFamily: 'unix'
     email: 'ci@aiqa.tech'
-    apiToken: '6bc6b09e-bed6-46cb-b9ac-9261fe4f18b5'
+    apiToken: 'b14098c6-1de0-40fd-87fa-a1ea0f47bf3f'
 testTool:
     type: 'parallel'
-    reportPath: 'cypress/__ci_parallel.log'
+    reportPath: 'cypress/cypress/__ci_parallel.log'
     regExp: '/^yarn cypress run -c baseUrl=http:\/\/localhost:3000 --spec (.*\.spec.js)$/'
 testCases:
-    scenariosPath: 'cypress/__ci_scenarios_list.txt'
+    scenariosPath: 'cypress/cypress/__ci_scenarios_list.txt'
     include:
         -
-            directory: 'cypress/integration/'
+            directory: 'cypress/cypress/integration/'
             fileMask: '*.js'
     exclude:
 srcFiles:

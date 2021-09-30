@@ -23,9 +23,9 @@ cp aiqa.yml.dist aiqa.yml
 
 ./_ci_reload.sh
 
-if [ ${CI_CUSTOM_BUILD} -eq 1 ]; then
-    ./_ci_build.sh
-fi
+# if [ ${CI_CUSTOM_BUILD} -eq 1 ]; then
+#     ./_ci_build.sh
+# fi
 
 if [ $# -eq 0 ]; then
     ./_ci_find_local_tests.sh
