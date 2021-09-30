@@ -34,11 +34,11 @@ CI_FINAL_TEST_RESULT_FILENAME=__ci_result.txt
 CI_TEST_RUNNER_COMMAND="yarn cypress run -c baseUrl=http://localhost:3000 --spec cypress/{}"
 
 
-CI_SCENARIOS_DIR="cypress/integration"
-CI_SCENARIOS_FILEMASK="*.spec.js"
+CI_SCENARIOS_DIR="cypress/tests"
+CI_SCENARIOS_FILEMASK="*.spec.ts"
 
 
-CI_BACKEND_DIR="backend-php"
+CI_BACKEND_DIR="backend"
 
 CI_CUSTOM_BUILD=1
 
