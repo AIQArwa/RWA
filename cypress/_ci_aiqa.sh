@@ -59,7 +59,7 @@ echo "START: verify results"
 
 if [ ! "$1" == "--rerun" ]; then
     echo "==============================================================="
-    aiqa build:stop
+    aiqa build:stop --change_algorithm
 fi
 
 # vim:ts=4:sw=4:et:syn=sh:
