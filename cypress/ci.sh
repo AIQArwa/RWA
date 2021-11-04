@@ -12,6 +12,7 @@
 #    --full-set        - full set with AIQA system
 #    --predict         - prediction by AIQA system
 #    --predict-divided - prediction by AIQA system with division of the case
+#    --history         - prediction by AIQA system with statistical model
 #
 # By default: local, full set.
 #
