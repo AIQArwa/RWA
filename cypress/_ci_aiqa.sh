@@ -22,13 +22,13 @@ source _ci_vars.sh
 
 CMD_PARAM=
 if [ "$1" == "--predict" ]; then
-    CMD_PARAM="--predict"
+    CMD_PARAM="--strategy=predict"
 fi
 if [ "$1" == "--predict-divided" ]; then
-    CMD_PARAM="--predict-divided"
+    CMD_PARAM="--strategy=predict-divided"
 fi
 if [ "$1" == "--history" ]; then
-    CMD_PARAM="--history"
+    CMD_PARAM="--strategy=history"
 fi
 
 if [ ! "$1" == "--rerun" ]; then
