@@ -18,6 +18,10 @@ if [ "$1" == "--predict-divided" ]; then
     ___CI_PARALLEL_EXIT_STRATEGY=${CI_PARALLEL_EXIT_STRATEGY}
 fi
 
+if [ "$1" == "--history" ]; then
+    ___CI_PARALLEL_EXIT_STRATEGY=${CI_PARALLEL_EXIT_STRATEGY}
+fi
+
 rm -f ${CI_PARALLEL_LOG_FILENAME}
 
 set -x

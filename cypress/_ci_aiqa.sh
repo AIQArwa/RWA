@@ -12,6 +12,7 @@
 #    --full-set        - full set with AIQA system
 #    --predict         - prediction by AIQA system
 #    --predict-divided - prediction by AIQA system with division of the case
+#    --history         - prediction by AIQA system with statistical model
 #    --rerun           - rerun failed tests
 #
 # By default: local, full set.
@@ -25,6 +26,9 @@ if [ "$1" == "--predict" ]; then
 fi
 if [ "$1" == "--predict-divided" ]; then
     CMD_PARAM="--predict-divided"
+fi
+if [ "$1" == "--history" ]; then
+    CMD_PARAM="--history"
 fi
 
 if [ ! "$1" == "--rerun" ]; then
